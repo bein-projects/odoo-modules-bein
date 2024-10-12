@@ -1,0 +1,19 @@
+<odoo>
+    <data>
+        <record id="bein_gov_inventory_guatemala_dependency_action" model="ir.actions.act_window" >
+            <field name="name">Dependencias</field>
+            <field name="res_model">bein_gov_inventory_guatemala.dependency</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+           <record id="bein_gov_inventory_guatemala_purchase_mode_action" model="ir.actions.act_window" >
+            <field name="name">Programa</field>
+            <field name="res_model">bein_gov_inventory_guatemala.purchase_mode</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="bein_gov_inventory_guatemala_menu_root" name="InventarioGT"/>
+        <menuitem id="bein_gov_inventory_guatemala_menu_dependency" name="Dependencias" parent="bein_gov_inventory_guatemala_menu_root" action="bein_gov_inventory_guatemala_dependency_action"/>
+        <menuitem id="bein_gov_inventory_guatemala_menu_purchase_mode" name="Programas" parent="bein_gov_inventory_guatemala_menu_root" action="bein_gov_inventory_guatemala_purchase_mode_action"/>
+    </data>
+</odoo>
