@@ -18,7 +18,7 @@ Inventario Gobierno Guatemala
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['purchase'],
 
     # always loaded
     'data': [
@@ -27,12 +27,14 @@ Inventario Gobierno Guatemala
         'views/templates.xml',
         'views/bein_menus.xml',
         'views/bein_dependency_views.xml',
-        'views/bein_purchase_mode_views.xml'
+        'views/bein_purchase_mode_views.xml',
+        'views/purchase_order_views.xml'
 
     ],
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',
     ],
+    'application': True,
 }
 

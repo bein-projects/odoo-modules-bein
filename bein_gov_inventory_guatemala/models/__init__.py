@@ -3,3 +3,4 @@
 from . import models
 from . import dependency
 from . import purchase_mode
+from . import purchase_order
